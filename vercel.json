@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "routes": [{
+            "src": "/",
+            "dest": "/api/index.js?username=wangningkai"
+        },
+        {
+            "src": "/user/(?<username>[^/]*)",
+            "dest": "/api/index.js?username=$username"
+        },
+        {
+            "src": "/u/(?<username>[^/]*)",
+            "dest": "/api/index.js?username=$username"
+        }
+    ]
+}
